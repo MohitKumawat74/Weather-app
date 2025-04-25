@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FiSearch, FiMapPin, FiHome, FiX } from 'react-icons/fi'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation, Link } from 'react-router-dom'
 import '../componentscss/Navbar.css'
 
 const Navbar = ({ setWeatherData }) => {
@@ -86,9 +86,9 @@ const Navbar = ({ setWeatherData }) => {
 
           {/* Desktop Navigation */}
           <div className="desktop-nav">
-            <a href="/" className="nav-link">Home</a>
-            <a href="/forecast" className="nav-link">Forecast</a>
-            <a href="/maps" className="nav-link">Maps</a>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/forecast" className="nav-link">Forecast</Link>
+            <Link to="/maps" className="nav-link">Maps</Link>
           </div>
 
           {/* Search Form */}
@@ -147,9 +147,9 @@ const Navbar = ({ setWeatherData }) => {
 
         {/* Mobile Menu */}
         <div className={`mobile-menu ${mobileMenuOpen ? 'open' : ''}`}>
-          <a href="/" className="mobile-nav-link">Home</a>
-          <a href="/forecast" className="mobile-nav-link">Forecast</a>
-          <a href="/maps" className="mobile-nav-link">Maps</a>
+          <Link to="/" className="mobile-nav-link">Home</Link>
+          <Link to="/forecast" className="mobile-nav-link">Forecast</Link>
+          <Link to="/maps" className="mobile-nav-link">Maps</Link>
         </div>
 
         {/* Error message */}
