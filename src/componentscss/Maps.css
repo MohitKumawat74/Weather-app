@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+    /* Adjust map container */
+    .max-w-6xl.mx-auto {
+      max-width: 95%;
+    }
+  
+    /* Stack layer controls */
+    .flex.flex-wrap.justify-between.items-center.mb-4.gap-4 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    /* Make layer buttons scrollable */
+    .flex.space-x-2 {
+      overflow-x: auto;
+      width: 100%;
+      padding-bottom: 0.5rem;
+    }
+  
+    /* Adjust map height */
+    .MapContainer {
+      height: 400px !important;
+    }
+  
+    /* Make search bar full width */
+    .relative.mb-4 input {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Slightly reduce max width */
+    .max-w-6xl.mx-auto {
+      max-width: 90%;
+    }
+  }

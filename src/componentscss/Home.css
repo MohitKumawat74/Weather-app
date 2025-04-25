@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+    /* Adjust card width */
+    .max-w-md.mx-auto {
+      max-width: 90%;
+    }
+  
+    /* Reduce padding */
+    .py-12.px-4 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  
+    /* Adjust weather display */
+    .flex.justify-center.items-center.my-4 {
+      flex-direction: column;
+    }
+  
+    /* Adjust grid layout */
+    .grid.grid-cols-2.gap-4 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Slightly reduce max width */
+    .max-w-md.mx-auto {
+      max-width: 80%;
+    }
+  }
